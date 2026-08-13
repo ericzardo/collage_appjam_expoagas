@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Funciona - CashbackStrat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Navegação -->
+    <nav class="max-w-5xl mx-auto mb-12 flex justify-between items-center bg-white/5 p-4 rounded-2xl border border-white/10">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center font-bold text-white">C</div>
+            <span class="font-bold tracking-tight text-xl">CashbackStrat</span>
+        </div>
+        <div class="flex gap-6 text-sm font-medium text-slate-400">
+            <a href="./index.html" class="hover:text-white transition">Simulador</a>
+            <a href="./how-works.html" class="text-emerald-400 border-b-2 border-emerald-400">Como Funciona</a>
+            <a href="./strategic.html" class="hover:text-white transition">Estratégia</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto space-y-12">
+        <header class="text-center">
+            <h1 class="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-cyan-400">
+                A Ciência por trás do Cálculo
+            </h1>
+            <p class="text-slate-400 text-lg">Entenda como protegemos a margem do seu supermercado.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Pilar 1 -->
+            <div class="glass-card p-8">
+                <div class="text-emerald-400 font-bold text-4xl mb-4">01</div>
+                <h3 class="text-xl font-bold mb-3">Margem de Segurança (0.5%)</h3>
+                <p class="text-slate-400 leading-relaxed text-sm">
+                    Diferente de cálculos simples de padaria, o CashbackStrat aplica automaticamente uma taxa oculta de <strong>0.5% sobre o faturamento bruto</strong> da campanha. Esta margem cobre taxas de transação, custos de software e gateways de pagamento, garantindo que o lucro exibido seja o lucro real que entra no seu caixa.
+                </p>
+            </div>
+
+            <!-- Pilar 2 -->
+            <div class="glass-card p-8">
+                <div class="text-cyan-400 font-bold text-4xl mb-4">02</div>
+                <h3 class="text-xl font-bold mb-3">O Fator "Breakage" (Resgate)</h3>
+                <p class="text-slate-400 leading-relaxed text-sm">
+                    Estatisticamente, entre 20% a 40% dos créditos gerados nunca são resgatados. O app utiliza a <strong>Taxa de Resgate</strong> para calcular o custo efetivo. Se você prevê um resgate baixo, pode oferecer um cashback maior no anúncio (chamariz) sem comprometer financeiramente a operação.
+                </p>
+            </div>
+        </div>
+
+        <!-- Fórmulas -->
+        <section class="glass-card p-10 border-t-4 border-emerald-500">
+            <h3 class="text-2xl font-bold mb-8 text-center">Algoritmos de Precisão</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="bg-slate-900/50 p-6 rounded-2xl border border-white/5">
+                    <span class="text-emerald-400 font-mono text-xs block mb-2 uppercase">Custo Efetivo do Cashback</span>
+                    <code class="text-lg">(Gatilho * %Cashback) * %Taxa_Resgate</code>
+                </div>
+                <div class="bg-slate-900/50 p-6 rounded-2xl border border-white/5">
+                    <span class="text-cyan-400 font-mono text-xs block mb-2 uppercase">Esforço de Upsell</span>
+                    <code class="text-lg">Custo_Cashback / Margem_Bruta %</code>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center mt-20 text-slate-500 text-xs">
+        CashbackStrat 1.0 — Documentação Técnica v1.0
+    </footer>
+</body>
+</html>
